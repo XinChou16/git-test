@@ -57,4 +57,10 @@ git push
 
 
 
+核心命令
+```shell
+git fetch
+git rebase
+git push
+```
 

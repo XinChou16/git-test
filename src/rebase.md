@@ -26,17 +26,34 @@ git push
 等同于 
 `git pull; git push`
 
+注：
+- `git pull` 为 `git fetch` 和 `git merge` 简写
+- `git pull --rebase` 为 `git fetch` 和 `git rebase` 的简写
 
 
 简化版本
 
+核心命令
 ```shell
 git pull --rebase
 git push
 ```
 
-- `git pull` 为 `git fetch` 和 `git merge` 简写
-- `git pull --rebase` 为 `git fetch` 和 `git rebase` 的简写
+遇到冲突：
+1. 解决冲突
+2. 解决完 git add 添加该文件
+3. git rebase --continue
+4. 推送到远端
+
+```shell
+git add README.md
+git commit
+git pull --rebase
+git add README.md 解决冲突
+git rebase --continue
+git push
+```
+
 
 
 

@@ -3,3 +3,4 @@ const foo = 'foo';
 const bar = 'bar';
 console.log('hello');
 // add emoji :smile:
+// fix bug :bug:
